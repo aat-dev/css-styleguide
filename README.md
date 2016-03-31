@@ -13,18 +13,19 @@ CSS Style Guide
 We using the following tools and best practice :  
  
  
-### CSS Preprocessor 
-- - -
+## SASS Preprocessor 
 
- - SASS (Libass - http://sass-lang.com/libsass)
+We use Sass (Syntactically Awesome Stylesheets); which is a scripting language that is interpreted into Cascading Style Sheets (CSS).
 
-### Framework
-- - -
+- [http://sass-lang.com/](http://sass-lang.com/) 
+- [http://sass-lang.com/libsass](http://sass-lang.com/libsass)
+
+
+## Framework
 
  - Bootstrap (Current 3.x - http://getbootstrap.com/)
 
-### SMACSS
------------
+## SMACSS
 
 We're aiming to stick to Jonathan Snook's SMACSS principles for structuring our CSS.
 
@@ -50,8 +51,7 @@ Here is a summary of the SMACSS principles, divided by its rule types :
 
 - [https://smacss.com/](https://smacss.com/) 
 
-### BEM
------------
+## BEM
 
 This is well-documented on the official site, but here is a brief introduction to **BEM (stands for Block, Element, Modifier).**
 
