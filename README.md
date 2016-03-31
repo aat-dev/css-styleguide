@@ -14,14 +14,17 @@ We using the following tools and best practice :
  
  
 ### CSS Preprocessor 
+- - -
 
  - SASS (Libass - http://sass-lang.com/libsass)
 
 ### Framework
+- - -
 
  - Bootstrap (Current 3.x - http://getbootstrap.com/)
 
 ### SMACSS
+-----------
 
 We're aiming to stick to Jonathan Snook's SMACSS principles for structuring our CSS.
 
@@ -48,10 +51,9 @@ Here is a summary of the SMACSS principles, divided by its rule types :
 - [https://smacss.com/](https://smacss.com/) 
 
 ### BEM
+-----------
 
-We encourage the use of @snookca's SMACSS framework. This is well-documented on the official site, but here is a brief introduction.
-
-**BEM stands for Block, Element, Modifier.**
+This is well-documented on the official site, but here is a brief introduction to **BEM (stands for Block, Element, Modifier).**
 
 - [http://getbem.com/introduction/](http://getbem.com/introduction/)
 
