@@ -10,7 +10,7 @@ CSS Style Guide
 
 ## Tools
  
-We using the following tools and practises :  
+We using the following tools and best practice :  
  
  
 ### CSS Preprocessor 
@@ -23,7 +23,29 @@ We using the following tools and practises :
 
 ### SMACSS
 
- - Please see https://smacss.com/
+We're aiming to stick to Jonathan Snook's SMACSS principles for structuring our CSS.
+
+Here is a summary of the SMACSS principles, divided by its rule types : 
+
+#### base rules
+
+- default, single-element selectors
+- could just be a reset stylesheet
+
+#### layout rules
+
+- divide the page into sections, holding modules together
+
+#### module rules
+
+- reusable, modular parts of designs
+- should each exist as a standalone component
+- avoid conditional styling based on location
+- if you need this, sub-class the module
+
+*Please see for a more detailed reference :* 
+
+- [https://smacss.com/](https://smacss.com/) 
 
 ### BEM
 
