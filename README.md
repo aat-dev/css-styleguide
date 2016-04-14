@@ -126,3 +126,60 @@ Rewriting our previous BEM example with our brand new mixins:
  }
  ```
 
+
+
+### BEM Mixins & Bootstrap Framework
+
+Please use following approach when using Bootstrap style with the custom BEM work.  (@extend is preferred when not creating new elements)
+
+@import : 
+
+    .navigation {
+    
+      @include make-row();
+    
+      .navigation__icons {
+        @include make-sm-column(6);
+      }
+    
+      .navigation__links {
+        @include make-sm-column(6);
+    
+        }
+    }
+
+
+@extend : 
+
+    .navigation {
+    
+      @extend .row;
+    
+      .navigation__icons {
+          @extend .col-md-6;
+      }
+    
+      .navigation__links {
+         @extend .col-md-6;
+       }
+    }
+
+   
+*Available @mixins for Bootstrap 3.x :* 
+
+- container-fixed()
+- make-row()
+- make-xs-column()
+- make-xs-column-offset()
+- make-xs-column-push()
+- make-xs-column-pull()
+- make-sm-column-offset()
+- make-sm-column-push()
+- make-sm-column-pull()
+- make-md-column-offset()
+- make-md-column-push()
+- make-md-column-pull()
+- make-lg-column-offset()
+- make-lg-column-push()
+- make-lg-column-pull()
+- clearfix()
