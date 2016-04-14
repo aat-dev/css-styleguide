@@ -82,4 +82,38 @@ More information about BEM and its benefits :
 - [http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem](http://blog.kaelig.fr/post/48196348743/fifty-shades-of-bem)
 - [https://css-tricks.com/snippets/sass/bem-mixins/](https://css-tricks.com/snippets/sass/bem-mixins/)
     
+### BEM Mixins
+
+We have two wrapper mixins for our BEM syntax as following:
+
+/// @param {String} $element - Element's name
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+*Rewriting our previous BEM example with our brand new mixins:
+.navigation {}
+.navigation{ 
+    /* CSS declarations for `.navigation` */
+    @include element('item') {
+        /* CSS declarations for `.navigation__item` */
+    }
+ }
+ .navigation{ 
+    /* CSS declarations for `.navigation` */
+    @include element('item') {
+      /* CSS declarations for `.navigation__item` */
+       @include modifier('active') {
+         /* CSS declarations for `.navigation__item--active` */
+    }
+ }
 
