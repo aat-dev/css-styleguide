@@ -86,28 +86,35 @@ More information about BEM and its benefits :
 
 *We have two wrapper mixins for our BEM syntax as following:*
 
+```
 /// @param {String} $element - Element's name
 @mixin element($element) {
     &__#{$element} {
         @content;
     }
 }
+```
 
+```
 /// @param {String} $modifier - Modifier's name
 @mixin modifier($modifier) {
     &--#{$modifier} {
         @content;
     }
 }
-
+```
 *Rewriting our previous BEM example with our brand new mixins:*
-.navigation {}
+
+```
 .navigation{ 
     /* CSS declarations for `.navigation` */
     @include element('item') {
         /* CSS declarations for `.navigation__item` */
     }
  }
+ ```
+ 
+ ```
  .navigation{ 
     /* CSS declarations for `.navigation` */
     @include element('item') {
@@ -116,4 +123,5 @@ More information about BEM and its benefits :
          /* CSS declarations for `.navigation__item--active` */
     }
  }
+ ```
 
