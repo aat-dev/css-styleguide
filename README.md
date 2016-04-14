@@ -84,7 +84,7 @@ More information about BEM and its benefits :
     
 ### BEM Mixins
 
-We have two wrapper mixins for our BEM syntax as following:
+*We have two wrapper mixins for our BEM syntax as following:*
 
 /// @param {String} $element - Element's name
 @mixin element($element) {
@@ -100,7 +100,7 @@ We have two wrapper mixins for our BEM syntax as following:
     }
 }
 
-*Rewriting our previous BEM example with our brand new mixins:
+*Rewriting our previous BEM example with our brand new mixins:*
 .navigation {}
 .navigation{ 
     /* CSS declarations for `.navigation` */
